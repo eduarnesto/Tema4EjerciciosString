@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Ejercicio10 {
+public class Ejercicio11 {
 
 	public static char codifica(char conjunto1[],char conjunto2[], char caracter) {
 		char caracterCodificado=' ';
