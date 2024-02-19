@@ -10,7 +10,7 @@ public class Ejercicio08 {
 		frase=frase.replace(" ", "");
 		
 		//Compruebo que sea un palindromo
-		while (palindromo && contador<frase.length()) {
+		while (palindromo && contador<(frase.length()/2)) {
 			if (frase.charAt(contador)!=frase.charAt(frase.length()-1-contador)) {
 				palindromo=false;
 			}
@@ -22,7 +22,7 @@ public class Ejercicio08 {
 	
 	public static void main(String[] args) {
 		//String para guardar la frase
-		String frase = "aaa aaa";
+		String frase = "aaeaa";
 		
 		//Booleano para saber si es palíndroma
 		boolean palindromo;
