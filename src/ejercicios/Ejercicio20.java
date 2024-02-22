@@ -11,6 +11,14 @@ public class Ejercicio20 {
 		// Numero que indica cuantas letras debe de tener cada parte
 		int letras = 3;
 
+		//Llamo a la funcion para separar cadenas
+		String[] palabras = separaCadenas(frase, letras);
+
+		// Muestro el resultado
+		System.out.println(Arrays.toString(palabras));
+	}
+
+	public static String[] separaCadenas(String frase, int letras) {
 		// Arrays de string para guardar la frase separada
 		String[] palabras = new String[frase.length() / letras];
 		
@@ -20,8 +28,6 @@ public class Ejercicio20 {
 		} else {
 			palabras = new String[(frase.length() / letras)+1];
 		}
-
-		System.out.println(palabras.length);
 		
 		// Relleno el array de String
 		for (int i = 0; i < palabras.length; i++) {
@@ -31,9 +37,7 @@ public class Ejercicio20 {
 				palabras[i] = frase.substring(i * letras);
 			}
 		}
-
-		// Muestro el resultado
-		System.out.println(Arrays.toString(palabras));
+		return palabras;
 	}
 
 }
